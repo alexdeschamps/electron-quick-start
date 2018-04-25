@@ -19,32 +19,22 @@
     "demo"
   ],
   "build": {
-    "appId": "org.develar.onshape",
-    "files": [
-      "output"
-    ],
-    "mac": {
-      "category": "public.app-category.graphics-design"
-    },
-    "nsis": {
-      "createDesktopShortcut": "always"
-    },
-    "dmg": {
+    "app-bundle-id": "test.berabou.me",
+    "app-category-type": "public.app-category.entertainment",
+    "osx": {
       "contents": [
         {
-          "x": 110,
-          "y": 150
-        },
-        {
-          "x": 240,
-          "y": 150,
+          "x": 410,
+          "y": 220,
           "type": "link",
           "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 220,
+          "type": "file"
         }
       ]
-    },
-    "linux": {
-      "category": "Graphics"
     }
   },
   "author": "GitHub",
