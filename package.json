@@ -19,22 +19,46 @@
     "demo"
   ],
   "build": {
-    "app-bundle-id": "test.berabou.me",
-    "app-category-type": "public.app-category.entertainment",
-    "osx": {
+    "asarUnpack": [
+      "node_modules/@paulcbetts/cld/build/Release/cld.node"
+    ],
+    "files": [
+      "!coverage/*",
+      "!installer/*",
+      "!tests/*",
+      "!node_modules/@paulcbetts/cld/deps/cld${/*}",
+      "!node_modules/@paulcbetts/cld/build/deps${/*}",
+      "!node_modules/@paulcbetts/spellchecker/vendor${/*}"
+    ],
+    "extraFiles": [
+      "config/Symphony.config",
+      "library/libsymphonysearch.dylib",
+      "library/indexvalidator.exec",
+      "library/lz4.exec",
+      "library/search-launch-agent.sh",
+      "library/search-launch-daemon.sh"
+    ],
+    "appId": "com.symphony.electron-desktop",
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.business"
+    },
+    "dmg": {
       "contents": [
         {
-          "x": 410,
-          "y": 220,
-          "type": "link",
-          "path": "/Applications"
+          "x": 140,
+          "y": 184
         },
         {
-          "x": 130,
-          "y": 220,
-          "type": "file"
+          "x": 412,
+          "y": 184,
+          "type": "link",
+          "path": "/Applications"
         }
       ]
+    },
+    "win": {
+      "target": "squirrel"
     }
   },
   "author": "GitHub",
