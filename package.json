@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
+    "compile": "",
     "start": "yarn install && yarn compile && electron ./app",
     "pack": "yarn compile && electron-builder --dir",
     "dist": "yarn compile && electron-builder",
