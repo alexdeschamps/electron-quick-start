@@ -6,7 +6,6 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "yarn install && yarn compile && electron ./app",
-    "compile": "rimraf app/out && tsc",
     "pack": "yarn compile && electron-builder --dir",
     "dist": "yarn compile && electron-builder",
     "release": "yarn compile && electron-builder"
