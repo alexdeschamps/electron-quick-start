@@ -9,8 +9,7 @@
     "compile": "rimraf app/out && tsc",
     "pack": "yarn compile && electron-builder --dir",
     "dist": "yarn compile && electron-builder",
-    "release": "yarn compile && electron-builder",
-    "start": "electron ."
+    "release": "yarn compile && electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -53,6 +52,6 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4",
-    "electron-builder": "^20.10.0",
+    "electron-builder": "^20.10.0"
   }
 }
